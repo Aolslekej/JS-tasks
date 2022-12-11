@@ -82,21 +82,18 @@ const nums = [5, 4, 3, -3, -10, -1, 8, -20, 0];
 
 const numbers = [443, -39, 0, -105, -21, 38, -20, 3, 90];
 
-function findPositiveNumbers(array, array1) {
+function findPositiveNumbers(array) {
     const rule = [];
     for (let i = 0; i < array.length; i++) {
         if (array[i] >= 0) {
             rule[rule.length] = array[i]
         }
     }
-    for (let i = 0; i < array1.length; i++) {
-        if (array1[i] >= 0) {
-            rule[rule.length] = array1[i]
-        }
-    }
-    console.log(rule)
+    return rule;
 }
-findPositiveNumbers(nums, numbers);
+console.log(findPositiveNumbers(nums));
+console.log(findPositiveNumbers(numbers));
+
 
 /*Задание 5
 
